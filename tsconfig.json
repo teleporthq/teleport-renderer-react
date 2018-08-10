@@ -1,19 +1,23 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "jsx": "react",
     "target": "es5",
     "outDir": "dist",
-    "lib": [ "es2015", "DOM" ],
+    "declaration": true,
+    "lib": ["es2015", "dom"],
     "rootDir": "src",
-    "noImplicitAny": false,
     "sourceMap": true,
-    "types": ["node"],
+    "types": ["jest"],
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true
   },
   "exclude": [
     "node_modules",
-    "./src/**/*.spec.ts",
-    "./src/__test__"
+    "dist",
+    "./__tests__/**/*"
   ]
 }
